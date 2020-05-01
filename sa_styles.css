@@ -1,0 +1,312 @@
+@charset "utf-8";
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 2
+    Start Webpage
+   
+The Flower Shoppe Style Sheet
+Author: Sophie Albright
+Date:   Feb 10 2020
+   
+   Filename: sa_styles.css
+
+*/
+
+
+/* Structural Styles */
+html {
+    background: #ffcccc;
+}
+
+/* step 12 on ce with mod */
+img {
+    display: block;
+    width: 25%;
+    float: left;
+    /* effect 2.22 */
+    border-radius: 25px;
+    border: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+img.image2  {
+    display: block;
+    width: 25%;
+    float: right;
+    /* effect 2.22 */
+    border-radius: 25px;
+    border: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+figcaption {
+  display: block;
+    float: right;
+}
+
+legend {
+	background-color: #e6ffcc;
+	color: black;
+}
+
+div.formRow > input#dineSpin {
+    @-webit-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+body {
+    font-family: "Didot";
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 85%; 
+}
+
+/*the effect - dropshadow 2.22 */
+blockquote {
+      text-shadow: 2px 2px #b3ffff;
+}
+
+h1 h2 h3 {
+    font-family: "Didot";
+    font-weight: normal;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Pulldown Menu Styles */
+/* Dropdown Button */ 
+.dropbtn {
+    background-color: #e6ffcc;
+    color: black;
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    text-align: center;
+}
+/* Tab Layout Styles */
+.tab { 
+    margin-left: 30px; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown.hover .dropbtn {
+    background-color: #ccffe0;
+}
+
+
+body > footer {
+    color: black;
+    background-color: #ccffe0;
+    font-size: 0.8em;
+    text-align: center;
+/* change from 1px to 2px */
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+body > header {
+    background-color: #ccffe0;
+}
+
+/* trying to add inset box around Rose and Sunflower */
+header h3 p.inset {
+    border-style: inset;
+}
+body > header > h1 {
+    font-size:4vw;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Limelight, cursive;
+    margin: 0px;
+}
+header > h1 > span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+/* Body Header Styles */
+header-title {
+    padding-left: 100px;
+}
+
+/* Navigation Styles */
+nav#mainLinks {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    background-color: rgb(51, 51, 51, 0.5);
+}
+
+/* Outline Styles */
+#outline {
+    color: rgb(51, 51, 51);
+    font-size: 0.8em;
+}
+#outline > h1 {
+    text-align: center;
+}
+nav#outline a:link, nav#outline a:visited {
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+}
+nav#outline a:hover, nav#outline a:active {
+    color: rgb(97, 97, 211);
+}
+
+/* Section Styles */
+section {
+   background-color: #ffffff;
+   align-content: flex-end;
+}
+section header > h1 {
+    font-size: 2.2em;
+    padding-left: 10px;
+}
+
+/* Table Styles */
+
+table.schedule {
+    background: white;
+    border: 10px outset #ccffff;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 75%
+}
+
+/* Table Cell Styles */
+
+table.schedule th, table.schedule td {
+    border: 1px solid gray;
+    flex-flow: wrap;
+}
+
+table.schedule th, table.schedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+}
+
+/* Table Caption Styles */
+
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+}
+
+
+/* Row Group Styles */
+
+table.schedule thread {
+    background: #ccffff;
+    color: white;
+}
+
+table.schedule tfoot {
+    background: #ccffff;
+    color: black;
+}
+
+table.schedule thread tr {
+    height: 30px;
+}
+
+table.schedule tbody tr {
+    height: 40px;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+    background: #ccffff;
+    width: 16%;
+}
+
+Col.dayCols {
+    background: white;
+    width: 12%
+}
+
+/* Audio and Video Player Styles */
+
+audio, video {
+    box-shadow: #b3ffff 8px 8px 15px; 
+    display: block;
+    margin: 10px auto;
+    width: 45%;
+}
+
+
+/* Track Styles */
+
+
+
+/* Article Styles */
+article > h2 {
+    font-size: 2em;
+    vertical-align: baseline;
+    text-align: left;
+}
+article > h3 {
+    font-size: 1.4em; 
+}
+body > section > article {
+	width: 80%;
+	margin-left: 4%;
+	margin-right: 4%;
+   
+}
+
+/* Aside Styles */
+aside {
+    font-size: 0.9em;
+}
+aside > h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
